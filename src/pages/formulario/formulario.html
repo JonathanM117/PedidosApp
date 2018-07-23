@@ -1,0 +1,112 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Pedidos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<div class="contenedorform">
+  <h2 class="enc">Nuevo Pedido</h2>
+  <div class="contp">
+    <div class="conts">
+        
+        <ion-list>
+          <ion-item>
+            <ion-label>Platillo Principal</ion-label>
+            <ion-select [(ngModel)]="platillo">
+              <ion-option value="nes">NES</ion-option>
+              <ion-option value="n64">Nintendo64</ion-option>
+              <ion-option value="ps">PlayStation</ion-option>
+              <ion-option value="genesis">Sega Genesis</ion-option>
+              <ion-option value="saturn">Sega Saturn</ion-option>
+              <ion-option value="snes">SNES</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+
+        <ion-list>
+          <ion-item>
+            <ion-label>Bebida</ion-label>
+            <ion-select [(ngModel)]="bebida">
+              <ion-option value="nes">NES</ion-option>
+              <ion-option value="n64">Nintendo64</ion-option>
+              <ion-option value="ps">PlayStation</ion-option>
+              <ion-option value="genesis">Sega Genesis</ion-option>
+              <ion-option value="saturn">Sega Saturn</ion-option>
+              <ion-option value="snes">SNES</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+
+        <ion-list>
+          <ion-item>
+            <ion-label>Complementos</ion-label>
+            <ion-select [(ngModel)]="complemento">
+              <ion-option value="nes">NES</ion-option>
+              <ion-option value="n64">Nintendo64</ion-option>
+              <ion-option value="ps">PlayStation</ion-option>
+              <ion-option value="genesis">Sega Genesis</ion-option>
+              <ion-option value="saturn">Sega Saturn</ion-option>
+              <ion-option value="snes">SNES</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+          
+        <ion-list radio-group>
+          <ion-list-header>
+            Tipo de Pago
+          </ion-list-header>
+        
+          <ion-item>
+            <ion-label>Tarjeta</ion-label>
+            <ion-radio checked="true" value="tarjeta"></ion-radio>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label>Efectivo</ion-label>
+            <ion-radio value="efectivo"></ion-radio>
+          </ion-item>
+        
+        </ion-list>
+
+        <ion-item>
+          <ion-label floating>Comentarios</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+
+
+        <button ion-button color="secondary">Enviar</button>
+        <button ion-button color="secondary" style="float: right;">Finalizar</button>
+
+        
+
+    </div>
+  </div>
+</div>
+
+<div class="contenedorplats">
+    <h2 class="enc">Pedidos</h2>
+    <div class="contp">
+      <div class="conts">
+        <div class="contpedi">
+          <h4>Pedido 1</h4>
+          <div class="intcontpedi">
+            <p class="pedprods">Platillo:<br> Hamburguesa</p>
+            <p class="pedprods">Bebida:<br> Coca-Cola 500ml</p>
+            <p class="pedprods">Complemento:<br> Orden de Papas</p>
+            <p class="pedprods">Pago:<br> Efectivo</p>
+          </div>
+          <div class="intcontpedi">
+              <h3 class="total">Total:<br>$75</h3>
+          </div>
+        </div>
+
+
+        
+  </div>
+    </div>
+  </div>
+
+</ion-content>

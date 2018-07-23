@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Pedidos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <div class="contenedorplats">
+        <h2 class="enc">Pedidos</h2>
+        <div class="contp">
+          <div class="conts">
+            <div class="contpedi">
+
+                  <div padding>
+                      <ion-segment [(ngModel)]="pet">
+                        <ion-segment-button value="kittens">
+                          Mesa 1
+                        </ion-segment-button>
+                        <ion-segment-button value="puppies">
+                          Mesa 2
+                        </ion-segment-button>
+                        <ion-segment-button value="puppies">
+                          Mesa 3
+                        </ion-segment-button>
+                        <ion-segment-button value="puppies">
+                          Mesa 4
+                        </ion-segment-button>
+                        <ion-segment-button value="puppies">
+                          Mesa 5
+                        </ion-segment-button>
+                      </ion-segment>
+                    </div>
+                    
+                    <div [ngSwitch]="pet">
+                      <ion-list *ngSwitchCase="'puppies'">
+                        <ion-item>
+                          <ion-thumbnail item-start>
+                            <img src="img/thumbnail-puppy-1.jpg">
+                          </ion-thumbnail>
+                          <h2>Pedido 1</h2>
+                          <div class="intcontpedi">
+                              <p class="pedprods">Platillo:<br> Hamburguesa</p>
+                              <p class="pedprods">Bebida:<br> Coca-Cola 500ml</p>
+                              <p class="pedprods">Complemento:<br> Orden de Papas</p>
+                              <p class="pedprods">Pago:<br> Efectivo</p>
+                          </div>
+                          <div class="intcontpedi">
+                            <h3 class="total">Total:<br>$75</h3>
+                          </div>
+                        </ion-item>
+                        ...
+                      </ion-list>
+                    
+                      <ion-list *ngSwitchCase="'kittens'">
+                        <ion-item>
+                          <ion-thumbnail item-start>
+                            <img src="../../assets/imgs/number1.png">
+                          </ion-thumbnail>
+                          <h2>Pedido 1</h2>
+                          <div class="intcontpedi">
+                              <p class="pedprods">Platillo:<br> Hamburguesa</p>
+                              <p class="pedprods">Bebida:<br> Coca-Cola 500ml</p>
+                              <p class="pedprods">Complemento:<br> Orden de Papas</p>
+                              <p class="pedprods">Pago:<br> Efectivo</p>
+                          </div>                        
+                        </ion-item>
+                        <ion-item>
+                            <ion-thumbnail item-start>
+                              <img src="../../assets/imgs/number2.png">
+                            </ion-thumbnail>
+                            <h2>Pedido 2</h2>
+                            <div class="intcontpedi">
+                                <p class="pedprods">Platillo:<br> Torta</p>
+                                <p class="pedprods">Bebida:<br> Limonada</p>
+                                <p class="pedprods">Complemento:<br> Alitas</p>
+                                <p class="pedprods">Pago:<br> Tarjeta</p>
+                            </div>                        
+                          </ion-item>
+                        ...
+                      </ion-list>
+                    </div>
+
+            </div>
+    
+    
+            
+      </div>
+        </div>
+      </div>
+
+</ion-content>

@@ -1,0 +1,33 @@
+page-mesas-mesero {
+    .login-content {
+        background: #4b2626;
+        background-image: url("../img/Mesas.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: relative;
+    }
+    .img-table1{
+        position: relative; left: 30px; top: 120px; width: 100px; height: 300px;
+      }
+
+    .img-table2{
+        position: relative; left: 200px; top: 120px; width: 100px; height: 300px;
+      }
+
+    .img-table3{
+        position: relative; left: 400px; top: 120px; width: 100px; height: 300px;
+      }
+
+    .img-table4{
+        position: relative; left: -350px; top: 300px; width: 100px; height: 300px;
+      }
+      
+    .img-table5{
+        position: relative; left: -200px; top: 300px; width: 100px; height: 300px;
+      }
+
+    .img-table6{
+        position: relative; left: 700px; top: 300px; width: 100px; height: 300px;
+      }
+}
